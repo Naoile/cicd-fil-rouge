@@ -63,5 +63,8 @@ Par Naoile et Doria
 ## Gouvernance du dépôt
 
 <!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
-PUSH REFUSÉ
+ 1) PUSH REFUSÉ
 ![Push refusé](images/push-refused.jpeg)
+
+2) PR sous approbation
+   ![PR refusée](images/merge-refused.png)
