@@ -63,6 +63,8 @@ Par Naoile et Doria
 ## Gouvernance du dépôt
 
 <!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
+
+SECTION LAB 1:
  1) PUSH REFUSÉ
 ![Push refusé](images/push-refused.jpeg)
 Vérification d'un push non autorisé grâce au rulesets qui bloque les push forcée.
@@ -71,6 +73,8 @@ Vérification d'un push non autorisé grâce au rulesets qui bloque les push for
 2) PR sous approbation
    ![PR refusée](images/merge-refused.png)
    Une approbation est necessaire avant le merge
+
+SECTION LAB 2:
 
 3) Check fichier ci.yml
  ![check ci](images/check-ci.png)
@@ -83,3 +87,5 @@ Vérification d'un push non autorisé grâce au rulesets qui bloque les push for
   5) Merge bloqué
    ![Blocage du merge](images/merge-block.jpeg)
    La merge ne peux pas être réaliser car la regles de test empeche la validation du a la modification d'un fichier test. (test_health.py) 
+
+   SECTION LAB 3:
