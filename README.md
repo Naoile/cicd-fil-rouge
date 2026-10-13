@@ -58,9 +58,10 @@ docker run --rm -p 8000:8000 taskflow
 ## Équipe
 
 <!-- Lab J1 : remplacez par les noms du binôme -->
-- À compléter
+Par Naoile et Doria
 
 ## Gouvernance du dépôt
 
 <!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
-À compléter.
+PUSH REFUSÉ
+![Push refusé](images/push-refused.jpeg)
