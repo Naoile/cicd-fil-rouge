@@ -65,6 +65,13 @@ Par Naoile et Doria
 <!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
  1) PUSH REFUSÉ
 ![Push refusé](images/push-refused.jpeg)
+Vérification d'un push non autorisé grâce au rulesets qui bloque les push forcée.
+
 
 2) PR sous approbation
    ![PR refusée](images/merge-refused.png)
+   Une approbation est necessaire avant le merge
+
+3) Check fichier ci.yml
+ ![check ci](images/check-ci.png)
+ Workflow de la PR,  checks verts, approbation du binôme, merge.
