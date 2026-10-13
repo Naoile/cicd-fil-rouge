@@ -79,3 +79,7 @@ Vérification d'un push non autorisé grâce au rulesets qui bloque les push for
  4) Status check obligatoire
   ![Configuration des jobs lint et test](images/add-rule-job.png) 
   Avec cette nouvelle regles pour fusionner une PR dans main il faudra également un job lint et test réussi en plus de l'approbation du binôme
+
+  5) Merge bloqué
+   ![Blocage du merge](images/merge-block.jpeg)
+   La merge ne peux pas être réaliser car la regles de test empeche la validation du a la modification d'un fichier test. (test_health.py) 
