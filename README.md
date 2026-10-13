@@ -75,3 +75,7 @@ Vérification d'un push non autorisé grâce au rulesets qui bloque les push for
 3) Check fichier ci.yml
  ![check ci](images/check-ci.png)
  Workflow de la PR,  checks verts, approbation du binôme, merge.
+
+ 4) Status check obligatoire
+  ![Configuration des jobs lint et test](images/add-rule-job.png) 
+  Avec cette nouvelle regles pour fusionner une PR dans main il faudra également un job lint et test réussi en plus de l'approbation du binôme
