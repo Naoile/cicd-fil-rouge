@@ -89,3 +89,6 @@ SECTION LAB 2:
    La merge ne peux pas être réaliser car la regles de test empeche la validation du a la modification d'un fichier test. (test_health.py) 
 
    SECTION LAB 3:
+   6) PR bloqué malgré des tests réussis
+   ![PR bloqué](images/ci-rapide.png)
+   Après l'ajout d'un matrice Python, les checks sont vert mais le la pr est rester bloquée car le ruleset demande toujours la verification de la rulset "test".
