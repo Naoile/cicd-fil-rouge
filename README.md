@@ -64,31 +64,49 @@ Par Naoile et Doria
 
 <!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
 
-SECTION LAB 1:
- 1) PUSH REFUSÉ
+## Protégez le dépôt git:
+
+Parmis les règles imposer dans ce GIT nous avons une PR avant merge, l'approbation du binôme ainsi que le refus d'un push forcer ou d'une suppression.
+
+Parmis les capture d'exemple d'imposition des regles, vous retrouverez : le push refusé et une pr sous appobation :
+
+
+  PUSH REFUSÉ
 ![Push refusé](images/push-refused.jpeg)
 Vérification d'un push non autorisé grâce au rulesets qui bloque les push forcée.
 
 
-2) PR sous approbation
+PR sous approbation
    ![PR refusée](images/merge-refused.png)
    Une approbation est necessaire avant le merge
 
-SECTION LAB 2:
+## Aucun code dans main sasn lint ni tests : Pipeline CI
 
-3) Check fichier ci.yml
- ![check ci](images/check-ci.png)
- Workflow de la PR,  checks verts, approbation du binôme, merge.
-
- 4) Status check obligatoire
+Status check obligatoire
   ![Configuration des jobs lint et test](images/add-rule-job.png) 
   Avec cette nouvelle regles pour fusionner une PR dans main il faudra également un job lint et test réussi en plus de l'approbation du binôme
 
-  5) Merge bloqué
-   ![Blocage du merge](images/merge-block.jpeg)
-   La merge ne peux pas être réaliser car la regles de test empeche la validation du a la modification d'un fichier test. (test_health.py) 
-
-   SECTION LAB 3:
-   6) PR bloqué malgré des tests réussis
+   ## SECTION :
+   1) PR bloqué malgré des tests réussis
    ![PR bloqué](images/ci-rapide.png)
    Après l'ajout d'un matrice Python, les checks sont vert mais le la pr est rester bloquée car le ruleset demande toujours la verification de la rulset "test".
+
+   Le job lint vérifie que notre code respecte les règles de programmation sans l'éxcuter.
+
+   Le job test lui va exécuter des tests pour vérifier que notre code se comporte comme prévue.
+
+   Comparaison avec et sans cache : 
+
+   Sans cache : 8 secondes
+
+   Avec cache : 6 secondes
+
+   Le cache pip a permis de réduire le temps d'installation de 2 secondes.
+
+   Rôle du job CI OK : 
+
+   Le job CI OK vérifie que les jobs lint et test se sont terminer avec succès, il est le seul check onligatoire dasn le rulestet, ce qui empeche la fusion d'une PR si un contôle échoue.
+
+
+
+
